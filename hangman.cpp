@@ -34,7 +34,7 @@ int main()
         "solution",
         "mountain",
         "platinum",
-        "qlphabet",
+        "alphabet",
         "necklace",
         "elevator",
         "diamonds",
@@ -59,7 +59,8 @@ int main()
     int lives = 10;
 
     std::cout << "Welcome to Hangman!\n";
-    
+    std::cout << "Would you like to try?\n (yes/no)"
+    std::cin << 
     while (true)    // TODO: update this condition to run when the game should be played
     {
         std::cout << "\nEnter your guess: ";
