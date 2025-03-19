@@ -60,7 +60,8 @@ int main()
     };
     
     // answer is a random word from the word bank
-    std::string answer = wordList[rand() % length(wordList)];
+    // std::string answer = wordList[rand() % length(wordList)];
+    std::string answer = "fragrant";
     char letterGuess;
     std::string wordGuess = "";
     int lives = 10;
@@ -87,11 +88,11 @@ int main()
 
         // TODO: Write code below that asks you whether you want to guess the word
         // and allow the user to guess the word using the variable wordGuess
-        std::cout << "Would you like to guess the word (y/n)?\n";
+        std::cout << "Would you like to guess the word (yes/no)?\n";
         std::string choice;
         std::cin >> choice;
 
-        if (choice == "y")
+        if (choice == "yes")
         {
             std::cout << "Guess the word \n";
             std::cin >> wordGuess;
